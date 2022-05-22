@@ -1,0 +1,97 @@
+#root {
+    background-color: black;
+    color: rgb(202, 202, 202);
+    padding-bottom: 20px;
+}
+
+.movie-app>.row {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+input {
+    background-color: black;
+    border: 1px solid blanchedalmond;
+    color: blanchedalmond;
+}
+
+html {
+    background-color: black;
+}
+
+#movie {
+    width: fit-content;
+}
+
+#header {
+    font-family: 'Allerta Stencil';
+    font-size: 22px;
+}
+
+label {
+    margin-right: 15px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+.nav-link {
+    color: whitesmoke !important;
+}
+
+.nav-link.active {
+    color: #495057 !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: #53637a !important;
+}
+
+.image-container {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.movie-card {
+    position: relative;
+    transition: transform 0.2s;
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.image-container:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.671);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    font-size: 10px;
+    text-align: center;
+}
+
+.liked {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 10px;
+    background: transparent !important;
+    border: transparent !important;
+}
+
+.app-header {
+    padding-left: 0% !important;
+}
